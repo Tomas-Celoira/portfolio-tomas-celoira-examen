@@ -38,6 +38,12 @@ section:first-child {
   font-size: 40px;
 }
 
+section article:nth-of-type(2){
+  background-color: #DAC7B8;
+  font-size: 2em;
+}
+
+
 footer {
   height: 20vh;
 

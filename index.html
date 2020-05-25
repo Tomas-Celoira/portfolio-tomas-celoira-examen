@@ -27,16 +27,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Sobre mi <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#sobre-mi">Sobre mi <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Experiencias</a>
+                <a class="nav-link" href="#experiencias">Experiencias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Trabajos</a>
+                <a class="nav-link" href="#trabajos">Trabajos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                <a class="nav-link" href="#contacto" tabindex="-1" aria-disabled="true">Contacto</a>
               </li>
             </ul>
           </div>
@@ -58,7 +58,9 @@
 
 
 <section>
-  <article class="mt-5">
+
+<!--SECCION SOBRE MI-->
+  <article id="sobre-mi" class="mt-5">
         <h2 class="text-center font-italic">Algo sobre mi</h2>
         <div class="container">
           <div class="row">
@@ -75,30 +77,34 @@
           </div>
         </div>
     </article>
+<!--SECCION SOBRE MI-->
 
-    <article class="mt-5 container-fluid bg-transparent">
-
-        <h2 class="text-center">EXPERIENCIAS</h2>
-        <div class="row mt-5 pt-5">
-          <div class="col-sm text-center">
-            <i class="fas fa-cube fa-7x m-3"></i>
-            <p>Carrera de Diseño Industrial</p>
-            <hr size="5" width="40%" noshade="noshade" color="#505050">
-            <p>2014-2019</p>
+<!--SECCION DE EXPERIENCIAS-->
+    <article id="experiencias" class="mt-5 container-fluid ">
+      <div class="">
+          <h2 class="text-center p-5">EXPERIENCIAS</h2>
+          <div class="row mt-2">
+            <div class="col-sm text-center">
+              <img class="img-fluid" src="assets/img/logo-unc.png" alt="Logo UNC">
+              <p>Carrera de Diseño Industrial</p>
+              <hr size="5" width="40%" noshade="noshade" color="#505050">
+              <p>2014-2019</p>
+            </div>
+            <div class="col-sm text-center">
+              <img class="img-fluid h-50" src="assets/img/animo-logo.png" alt="Logo Estudio Animo">
+              <p>Estudio de animacion ANIMO</p>
+            </div>
+            <div class="col-sm text-center">
+              <img class="img-fluid" src="assets/img/logo.svg" alt="Desafio Latam">
+              <p>Curso UX/UI en Desafiio Latam</p>
+            </div>
           </div>
-          <div class="col-sm text-center">
-            <i class="fas fa-cube fa-7x m-3"></i>
-            <p>Estudio de animacion ANIMO</p>
-          </div>
-          <div class="col-sm text-center">
-            <img  src="assets/img/logo.svg" alt="Desafio Latam">
-            <p>Curso UX/UI en Desafiio Latam</p>
-          </div>
-        </div>
-
+      </div>
     </article>
+<!--SECCION DE EXPERIENCIAS-->
 
-    <article class="">
+<!--SECCION DE LAS CARDS-->
+    <article id="trabajos" class="container-fluid">
       <h1 class="text-center mt-5">Algunos de mis trabajos</h1>
         <div class="container">
 
@@ -172,15 +178,15 @@
 
         </div>
       </article>
+<!--SECCION DE LAS CARDS-->
 
 
-
-
-    <article class="">
+<!--SECCION DE  TYPEWORD-->
+    <article id="contacto" class="">
           <h1 class="text-center">Contactame!</h1>
           <div class="typeform-widget mt-1" data-url="https://tomasceloira.typeform.com/to/r5v8Jd" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=r5v8Jd&utm_source=typeform.com-01E96GH1YFR1MYPASMKCDFNQP3-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
     </article>
-
+<!--SECCION DE  TYPEWORD-->
 
 </section>
 
