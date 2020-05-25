@@ -1,0 +1,19 @@
+body {
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+header {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 2em;
+  text-decoration: underline;
+  background-image: url("assets/img/yo.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  height: 20vh;
+
+}
