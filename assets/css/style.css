@@ -3,8 +3,15 @@ body {
   font-weight: 300;
 }
 
+/*body {
+  margin: 0 0 0 0;
+  border: 0 0 0 0;
+  padding: 0 0 0 0;
+}*/
+
 nav {
-  background-color: #C75E55
+  color: #ffffff;
+  background-color: #C75E55;
 }
 
 
@@ -61,12 +68,16 @@ section article:nth-of-type(2){
   font-family: "Montserrat"
 }
 
+.centrado {
+  margin-top: 21%;
+}
+
 .ajuste {
   height: 37%;
 }
 
 #bold {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 150%;
 }
 

@@ -15,6 +15,10 @@ $("a").click(function(event){
  }
 });
 
-$('[data-toggle="popover"]').popover();
+$('.example-popover').popover({
+  container: 'body'
+})
+
+$('[data-toggle="tooltip"]').tooltip();
 
 });
