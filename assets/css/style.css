@@ -78,7 +78,7 @@ section article:nth-of-type(2){
 
 #bold {
   font-weight: 400;
-  font-size: 150%;
+  font-size: 1em;
 }
 
 section article:nth-last-child(2) {
