@@ -14,4 +14,7 @@ $("a").click(function(event){
   });
  }
 });
+
+$('[data-toggle="popover"]').popover();
+
 });

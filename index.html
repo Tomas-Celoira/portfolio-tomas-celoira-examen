@@ -60,18 +60,20 @@
 <section>
 
 <!--SECCION SOBRE MI-->
-  <article id="sobre-mi" class="mt-5">
-        <h2 class="text-center font-italic">Algo sobre mi</h2>
+  <article id="sobre-mi" class="mt-5 d-none d-md-block d-sm-none">
+        <h2 id="titulo" class="text-center font-italic">Algo sobre mi</h2>
+        <p id="subtitulo" class="text-center font-italic">Soy un recien recibido Diseñador Industrial especializado en el modelado 3D con experiencia en el rubro de publicidad</p>
+        <hr size="5" width="70%" noshade="noshade" color="#C75E55">
         <div class="container">
           <div class="row">
             <div class="col-sm">
-              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-sm">
-              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-sm text-center">
-              <i class="fas fa-user-ninja fa-10x pt-3"></i>
+              <i id="margen-icono" class="fas fa-user-ninja fa-10x"></i>
               <p class="font-italic">And i am a ninja</p>
             </div>
           </div>
@@ -82,7 +84,7 @@
 <!--SECCION DE EXPERIENCIAS-->
     <article id="experiencias" class="mt-5 container-fluid ">
       <div class="">
-          <h2 class="text-center p-5">EXPERIENCIAS</h2>
+          <h2 class="text-center pt-5 pb-5" id="bold">EXPERIENCIAS</h2>
           <div class="row mt-2">
             <div class="col-sm text-center">
               <img class="img-fluid" src="assets/img/logo-unc.png" alt="Logo UNC">
@@ -90,13 +92,15 @@
               <hr size="5" width="40%" noshade="noshade" color="#505050">
               <p>2014-2019</p>
             </div>
-            <div class="col-sm text-center">
-              <img class="img-fluid h-50" src="assets/img/animo-logo.png" alt="Logo Estudio Animo">
+          <!--  <div class="col-sm text-center">
+              <img class="img-fluid ajuste" src="assets/img/animo-logo.png" alt="Logo Estudio Animo">
               <p>Estudio de animacion ANIMO</p>
-            </div>
+            </div>-->
             <div class="col-sm text-center">
-              <img class="img-fluid" src="assets/img/logo.svg" alt="Desafio Latam">
-              <p>Curso UX/UI en Desafiio Latam</p>
+              <img class="img-fluid" src="assets/img/logo-latam.png" alt="Desafio Latam">
+              <p class="">Curso UX/UI en Desafio Latam</p>
+              <hr size="5" width="40%" noshade="noshade" color="#505050">
+              <p>2020</p>
             </div>
           </div>
       </div>
@@ -105,7 +109,7 @@
 
 <!--SECCION DE LAS CARDS-->
     <article id="trabajos" class="container-fluid">
-      <h1 class="text-center mt-5">Algunos de mis trabajos</h1>
+      <h1 class="text-center text-white pt-5" >Algunos de mis trabajos</h1>
         <div class="container">
 
               <div class="row mt-5">
@@ -115,7 +119,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Modelado de personajes</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Ver mas</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#personajes">Ver mas</a>
                       </div>
                     </div>
                 </div>
@@ -125,7 +129,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Diseño de Assets</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Ver mas</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#assets">Ver mas</a>
                       </div>
                     </div>
                 </div>
@@ -135,21 +139,21 @@
                       <div class="card-body">
                         <h5 class="card-title">Concept de Productos</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Ver mas</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#productos">Ver mas</a>
                       </div>
                     </div>
                 </div>
               </div>
 
 
-              <div class="row mt-5">
+              <div class="row mt-1 pb-5">
                 <div class="col-sm">
                   <div class="card m-auto" style="width: 18rem;">
                       <img src="assets/img/glop 4.jpg" class="card-img-top img-fluid" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Concept de animaciones</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Ver mas</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#animaciones">Ver mas</a>
                       </div>
                     </div>
                 </div>
@@ -159,7 +163,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Concept de Assets</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Ver mas</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#bomba">Ver mas</a>
                       </div>
                     </div>
                 </div>
@@ -169,7 +173,7 @@
                       <div class="card-body">
                         <h5 class="card-title">Diseño de enviroment</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Ver mas</a>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#enviroment">Ver mas</a>
                       </div>
                     </div>
                 </div>
@@ -183,21 +187,147 @@
 
 <!--SECCION DE  TYPEWORD-->
     <article id="contacto" class="">
-          <h1 class="text-center">Contactame!</h1>
+          <h1 class="text-center pt-5">Contactame!</h1>
           <div class="typeform-widget mt-1" data-url="https://tomasceloira.typeform.com/to/r5v8Jd" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=r5v8Jd&utm_source=typeform.com-01E96GH1YFR1MYPASMKCDFNQP3-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
     </article>
 <!--SECCION DE  TYPEWORD-->
 
 </section>
 
+<!--SECCION MODALES-->
+<section>
+      <div class="modal fade" id="personajes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Personajes</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="assets/img/feed.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="assets" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Assets</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="assets/img/encendedor.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="productos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Concept de productos</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="assets/img/drone.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="animaciones" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Animaciones</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="assets/img/glop 4.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="bomba" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Concept de assets</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="assets/img/bomba.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="enviroment" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Diseño de enviroments</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid" src="assets/img/4.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</section>
+<!--SECCION MODALES-->
 
 
-<footer class="container-fluid bg-dark">
-  <div class="row text-center mt-5  ">
+
+<!--SECCION FOOTER-->
+<footer class="container-fluid">
+  <div class="row text-center ">
     <div class="col-sm">
       <h1 class="text-center text-light">TOMAS CELOIRA PRINCE</h1>
     </div>
-    <div class="col-sm ">
+    <div class="col-sm">
       <i class="fab fa-twitter fa-5x text-light "></i>
       <i class="fab fa-instagram fa-5x text-light "></i>
       <i class="fab fa-facebook-square fa-5x text-light "></i>
@@ -205,7 +335,7 @@
     </div>
   </div>
 </footer>
-
+<!--SECCION FOOTER-->
 
 
 

@@ -9,7 +9,7 @@ nav {
 
 
 header {
-  font-family: "Merriweather";
+  font-family: "Montserrat";
   font-weight: 300;
   color: #ffffff;
   height: 90vh;
@@ -34,17 +34,59 @@ font-size: 3em;
 margin-top: 35%;
 }
 
-section:first-child {
-  font-size: 40px;
+section article:first-of-type {
+  font-size: 1em;
+}
+
+#titulo {
+  font-size: 3em;
+}
+
+#subtitulo {
+  font-size: 1.75em;
+}
+
+
+section article:first-of-type p:nth-child(2) {
+  font-weight: 700;
+}
+
+#margen-icono {
+  margin-top: 40%;
 }
 
 section article:nth-of-type(2){
   background-color: #DAC7B8;
   font-size: 2em;
+  font-family: "Montserrat"
 }
 
+.ajuste {
+  height: 37%;
+}
+
+#bold {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+section article:nth-last-child(2) {
+  background-color: #191918;
+}
+
+section article:nth-last-child(2) .col-sm {
+  padding: 1.5%;
+}
 
 footer {
-  height: 20vh;
+  background-color: #C75E55;
+}
 
+footer div:first-child {
+  padding: 2.5em;
+}
+
+footer div:last-child {
+padding: 1em;
+background-color: #C75E55;
 }
