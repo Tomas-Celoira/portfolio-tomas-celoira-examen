@@ -15,9 +15,7 @@ $("a").click(function(event){
  }
 });
 
-$('.example-popover').popover({
-  container: 'body'
-})
+
 
 $('[data-toggle="tooltip"]').tooltip();
 
